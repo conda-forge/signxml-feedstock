@@ -1,5 +1,5 @@
 {% set name = "signxml" %}
-{% set version = "2.7.0" %}
+{% set version = "2.7.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 3471f7ac2786923c7b036e865419a77462829efc56fdf813297477763cd39b38
+  sha256: 01e115dd6a6b773b572f7898807e6f7d0de947a08d6234216d3d8bf8af3163df
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - asn1crypto >=0.24.0
     - certifi >=2018.1.18
     - cryptography >=2.1.4
-    - defusedxml >=0.5.0
     - eight >=0.4.2
     - lxml >=4.2.1
     - pyopenssl >=17.5.0
