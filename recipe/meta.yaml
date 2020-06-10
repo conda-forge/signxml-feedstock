@@ -1,18 +1,18 @@
 {% set name = "signxml" %}
-{% set version = "2.7.2" %}
+{% set version = "2.7.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 2e186c117284fe5a0c543f5bcdde68f5a2341eeae219af9eb7e512dacf4bfce7
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3b78b57e374d5517b4eddbbb27519208ccfbedbcabcf47ee322161f53482f174
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,13 +33,13 @@ test:
     - signxml.util
 
 about:
-  home: "https://github.com/kislyuk/signxml"
-  license: "Apache-2.0"
-  license_family: "APACHE"
-  license_file: "LICENSE"
-  summary: "Python XML Signature library"
-  doc_url: "https://signxml.readthedocs.io/en/latest/"
-  dev_url: "https://github.com/kislyuk/signxml"
+  home: https://github.com/kislyuk/signxml
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Python XML Signature library
+  doc_url: https://signxml.readthedocs.io/en/latest/
+  dev_url: https://github.com/kislyuk/signxml
 
 extra:
   recipe-maintainers:
