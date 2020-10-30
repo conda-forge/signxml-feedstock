@@ -5,11 +5,13 @@ Home: https://github.com/kislyuk/signxml
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/signxml-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python XML Signature library
 
+Development: https://github.com/kislyuk/signxml
 
+Documentation: https://signxml.readthedocs.io/en/latest/
 
 Current build status
 ====================
