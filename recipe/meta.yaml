@@ -25,7 +25,7 @@ requirements:
     - eight >=0.4.2
     - lxml >=4.2.1
     - pyopenssl >=17.5.0
-    - python
+    - python >=2.7
 
 test:
   imports:
