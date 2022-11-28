@@ -1,5 +1,5 @@
 {% set name = "signxml" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9defd8a61fb28c9ee0cedf51e5c88d41e97ce26752366e9228686d6a20c5117e
+  sha256: c299a2efa384dd85788199db56675e929aff9d9a44e59c09b451193bde08f319
 
 build:
   number: 0
