@@ -1,11 +1,11 @@
-About signxml
-=============
+About signxml-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/signxml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/kislyuk/signxml
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/signxml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python XML Signature library
 
