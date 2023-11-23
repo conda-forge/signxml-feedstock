@@ -20,10 +20,10 @@ requirements:
     - python
   run:
     - certifi >=2018.1.18
-    - cryptography >=2.1.4, <4
+    - cryptography >=3.4.8
     - lxml >=4.2.1, <5
-    - pyopenssl >=17.5.0, <21
-    - python >=3.6
+    - pyopenssl >=17.5.0
+    - python >=3.7
 
 test:
   imports:
