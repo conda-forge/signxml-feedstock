@@ -3,15 +3,15 @@ About signxml-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/signxml-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/kislyuk/signxml
+Home: https://xml-security.github.io/signxml/
 
 Package license: Apache-2.0
 
 Summary: Python XML Signature library
 
-Development: https://github.com/kislyuk/signxml
+Development: https://github.com/XML-Security/signxml
 
-Documentation: https://signxml.readthedocs.io/en/latest/
+Documentation: https://xml-security.github.io/signxml/
 
 Current build status
 ====================
