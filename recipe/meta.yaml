@@ -19,10 +19,9 @@ requirements:
     - pip
     - python
   run:
-    - certifi >=2019.11.28
-    - cryptography >=3.4.8
-    - lxml >=4.5.0, <6
-    - pyopenssl >=19.0.0
+    - certifi >=2023.11.17
+    - cryptography >=43
+    - lxml >=5.2.1, <6
     - python >=3.7
 
 test:
