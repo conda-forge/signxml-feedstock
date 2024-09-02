@@ -17,7 +17,8 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.7
+    - setuptools
   run:
     - certifi >=2023.11.17
     - cryptography >=43
@@ -30,13 +31,13 @@ test:
     - signxml.util
 
 about:
-  home: https://github.com/kislyuk/signxml
+  home: https://xml-security.github.io/signxml/
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: Python XML Signature library
-  doc_url: https://signxml.readthedocs.io/en/latest/
-  dev_url: https://github.com/kislyuk/signxml
+  doc_url: https://xml-security.github.io/signxml/
+  dev_url: https://github.com/XML-Security/signxml
 
 extra:
   recipe-maintainers:
