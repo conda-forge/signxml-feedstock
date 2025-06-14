@@ -1,5 +1,5 @@
 {% set name = "signxml" %}
-{% set version = "4.0.3" %}
+{% set version = "4.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,25 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 113264176bfe5597b8e3ebf01d37e06f02827b284952e956e7f22efa02f66634
+  sha256: 0925be51de4cdfa048afd59cb79e3446370d68d1abe87945f3cb5783dbe50872
+  patches:
+    - 0001-fix-type-annotation-to-be-3.9-compliant.patch
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vvv --no-deps
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - hatchling
+    - hatch-vcs
   run:
     - certifi >=2023.11.17
     - cryptography >=43
-    - lxml >=5.2.1, <6
+    - lxml >=5.2.1,<6
     - python >={{ python_min }}
 
 test:
