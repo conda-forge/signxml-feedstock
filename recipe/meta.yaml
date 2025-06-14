@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 7e783299f85206538d7115ffdc8cb704f48d1ed3e066378f783d5fc251e24a5d
-  patches:
-    - 0001-fix-type-annotation-to-be-3.9-compliant.patch
 
 build:
   number: 0
