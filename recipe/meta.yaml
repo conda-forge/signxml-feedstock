@@ -1,5 +1,5 @@
 {% set name = "signxml" %}
-{% set version = "4.0.4" %}
+{% set version = "4.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0925be51de4cdfa048afd59cb79e3446370d68d1abe87945f3cb5783dbe50872
-  patches:
-    - 0001-fix-type-annotation-to-be-3.9-compliant.patch
+  sha256: 7e783299f85206538d7115ffdc8cb704f48d1ed3e066378f783d5fc251e24a5d
 
 build:
   number: 0
