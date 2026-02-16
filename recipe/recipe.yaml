@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: signxml
-  version: "4.2.2"
+  version: 4.3.0
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: bd2f9b739c869261a1f4edfda925f75feef95ebfc09858a080942fbfc80a7021
+  sha256: a3704b1cdd14efa03ae485111c5f1fbf6f4000d97aedbf20cb7efd34a65a83a0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vvv --no-deps
 
@@ -26,9 +26,8 @@ requirements:
   run:
     - certifi >=2023.11.17
     - cryptography >=43
-    - lxml >=5.2.1,<6
+    - lxml >=5.2.1,<7
     - python >=${{ python_min }}
-
 tests:
   - python:
       imports:
