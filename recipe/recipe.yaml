@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: signxml
-  version: "5.0.0"
+  version: 5.0.1
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: dc73352919d9650278c970ee71227886ad5c457f7514a0e5b3de76b89dda1875
+  sha256: 996d1740358d9fffc4429dc99284b4ff522bc38dde57e41f1d5c8c365d56c107
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - hatch-vcs
   run:
     - certifi >=2023.11.17
-    - cryptography >=43
+    - cryptography >=45
     - lxml >=5.2.1,<7
     - python >=${{ python_min }}
 tests:
