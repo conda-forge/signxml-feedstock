@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: signxml
-  version: 5.0.1
+  version: "5.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 996d1740358d9fffc4429dc99284b4ff522bc38dde57e41f1d5c8c365d56c107
+  sha256: 9b5fb208b59e843a87f36fd9fc3c8ccbb46e11b1ffab037d4b177ece33b5fd18
 
 build:
   number: 0
