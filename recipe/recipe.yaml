@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: signxml
-  version: "5.1.0"
+  version: "5.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 9b5fb208b59e843a87f36fd9fc3c8ccbb46e11b1ffab037d4b177ece33b5fd18
+  sha256: 18aa6c3dc6833c7f441d9d20875ea50fe50149402f87061c27d0b6ea7f039096
 
 build:
   number: 0
@@ -33,7 +33,9 @@ tests:
       imports:
         - signxml
         - signxml.util
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 about:
   license: Apache-2.0
   license_file: LICENSE
